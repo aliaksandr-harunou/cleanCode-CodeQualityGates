@@ -5,6 +5,7 @@ const {ExperimentalPlane} = require('./planes/ExperimentalPlane');
 const {MILITARY_TYPES} = require('./models/militaryTypes');
 const {EXPERIMENTAL_TYPES} = require('./models/experimentalTypes');
 const {CLASSIFICATION_LEVELS} = require('./models/classificationLevels');
+const {print} = require('./helpers/print');
 
 (function createAirport() {
 
@@ -30,8 +31,8 @@ const {CLASSIFICATION_LEVELS} = require('./models/classificationLevels');
     let airport = new Airport(planes);
     let militaryAirport = new Airport(airport.getMilitaryPlanes());
     let passengerAirport = new Airport(airport.getPassengerPlanes());
-    console.log(`Military airport sorted by max distance: ${airport.print(militaryAirport.sortByMaxDistance())}`);
-    console.log(`Passenger airport sorted by max speed: ${airport.print(passengerAirport.sortByMaxSpeed())}`);
-    console.log(`Plane with max passenger capacity: ${airport.print(passengerAirport.getPassengerPlaneWithMaxPassengersCapacity())}`);
+    console.log(`Military airport sorted by max distance: ${print(militaryAirport.sortByMaxDistance())}`);
+    console.log(`Passenger airport sorted by max speed: ${print(passengerAirport.sortByMaxSpeed())}`);
+    console.log(`Plane with max passenger capacity: ${print(passengerAirport.getPassengerPlaneWithMaxPassengersCapacity())}`);
     module.exports = {airport};
 })();
