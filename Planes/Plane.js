@@ -24,4 +24,4 @@ class Plane {
     }
 }
 
-module.exports = Plane;
+module.exports = {Plane};

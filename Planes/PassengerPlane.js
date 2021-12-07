@@ -1,4 +1,4 @@
-const Plane = require('./Plane');
+const {Plane} = require('./Plane');
 
 class PassengerPlane extends Plane {
 
@@ -10,10 +10,6 @@ class PassengerPlane extends Plane {
     getPassengersCapacity() {
         return this._passengersCapacity;
     }
-
-    setPassengersCapacity(value) {
-        this._passengersCapacity = value;
-    }
 }
 
-module.exports = PassengerPlane;
+module.exports = {PassengerPlane};

@@ -1,4 +1,4 @@
-const Plane = require('./Plane');
+const {Plane} = require('./Plane');
 
 class MilitaryPlane extends Plane {
 
@@ -13,4 +13,4 @@ class MilitaryPlane extends Plane {
     }
 }
 
-module.exports = MilitaryPlane;
+module.exports = {MilitaryPlane};
