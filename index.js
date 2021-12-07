@@ -9,14 +9,14 @@ const {CLASSIFICATIONLEVELS} = require('./models/classificationLevels');
 (function createAirport() {
 
     let planes = [
-        new PassengerPlane('Boeing-737', 900, 12000, 60500, 164),
-        new PassengerPlane('Boeing-737-800', 940, 12300, 63870, 192),
-        new PassengerPlane('Boeing-747', 980, 16100, 70500, 242),
-        new PassengerPlane('Airbus A320', 930, 11800, 65500, 188),
-        new PassengerPlane('Airbus A330', 990, 14800, 80500, 222),
-        new PassengerPlane('Embraer 190', 870, 8100, 30800, 64),
-        new PassengerPlane('Sukhoi Superjet 100', 870, 11500, 50500, 140),
-        new PassengerPlane('Bombardier CS300', 920, 11000, 60700, 196),
+        new PassengerPlane({model:'Boeing-737', maxSpeed: 900, maxFlightDistance: 12000, maxLoadCapacity: 60500, passengersCapacity:164}),
+        new PassengerPlane({model:'Boeing-737-800', maxSpeed: 940, maxFlightDistance: 12300, maxLoadCapacity: 63870, passengersCapacity:192}),
+        new PassengerPlane({model:'Boeing-747', maxSpeed: 980, maxFlightDistance: 16100, maxLoadCapacity: 70500, passengersCapacity:242}),
+        new PassengerPlane({model:'Airbus A320', maxSpeed: 930, maxFlightDistance: 11800, maxLoadCapacity: 65500, passengersCapacity:188}),
+        new PassengerPlane({model:'Airbus A330', maxSpeed: 990, maxFlightDistance: 14800, maxLoadCapacity: 80500, passengersCapacity:222}),
+        new PassengerPlane({model:'Embraer 190', maxSpeed: 870, maxFlightDistance: 8100, maxLoadCapacity: 30800, passengersCapacity:64}),
+        new PassengerPlane({model:'Sukhoi Superjet 100', maxSpeed: 870, maxFlightDistance: 11500, maxLoadCapacity: 50500, passengersCapacity:140}),
+        new PassengerPlane({model:'Bombardier CS300', maxSpeed: 920, maxFlightDistance: 11000, maxLoadCapacity: 60700, passengersCapacity:196}),
         new MilitaryPlane('B-1B Lancer', 1050, 21000, 80000, MILITARYTYPES.BOMBER),
         new MilitaryPlane('B-2 Spirit', 1030, 22000, 70000, MILITARYTYPES.BOMBER),
         new MilitaryPlane('B-52 Stratofortress', 1000, 20000, 80000, MILITARYTYPES.BOMBER),

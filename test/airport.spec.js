@@ -10,7 +10,7 @@ const {airport} = require('../index');
 
 describe('test airport', () => {
 
-    let planeWithMaxPassengerCapacity = new PassengerPlane('Boeing-747', 980, 16100, 70500, 242);
+    let planeWithMaxPassengerCapacity = new PassengerPlane({model:'Boeing-747', maxSpeed: 980, maxFlightDistance: 16100, maxLoadCapacity: 70500, passengersCapacity:242});
     let planeWithMaxLoadCapacity = new MilitaryPlane('C-130 Hercules', 650, 5000, 110000, MILITARYTYPES.TRANSPORT);
     let planeWithMinLoadCapacity = new ExperimentalPlane("Ryan X-13 Vertijet", 560, 307, 500, EXPERIMENTALTYPES.VERTICAL_TAKE_OFF_LANDING, CLASSIFICATIONLEVELS.TOP_SECRET);
 
