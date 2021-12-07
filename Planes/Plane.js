@@ -1,10 +1,10 @@
 class Plane {
 
-    constructor(model, maxSpeed, maxFlightDistance, maxLoadCapacity) {
-        this.model = model;
-        this.maxSpeed = maxSpeed;
-        this.maxFlightDistance = maxFlightDistance;
-        this.maxLoadCapacity = maxLoadCapacity;
+    constructor(planParameters) {
+        this.model = planParameters.model;
+        this.maxSpeed = planParameters.maxSpeed;
+        this.maxFlightDistance = planParameters.maxFlightDistance;
+        this.maxLoadCapacity = planParameters.maxLoadCapacity;
     }
 
     getModel() {
