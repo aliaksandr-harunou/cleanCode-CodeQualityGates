@@ -1,7 +1,7 @@
-const militaryTypes = {
-    FIGHTER: 'Fighter',
-    BOMBER: 'Bomber',
-    TRANSPORT: 'Transport'
+const MILITARY_TYPES = {
+    FIGHTER: 'FIGHTER',
+    BOMBER: 'BOMBER',
+    TRANSPORT: 'TRANSPORT'
 };
 
-module.exports =  militaryTypes;
+module.exports =  {MILITARY_TYPES};
